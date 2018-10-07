@@ -37,7 +37,7 @@ const bot = new SlackBot({
 });
 
 bot.on("start", () => {
-  bot.postMessageToChannel("random", "Desenha uma bola!");
+  bot.postMessageToChannel("random", reponses[Math.floor(Math.random() * reponses.length)]);
 });
 
 bot.on("message", (data) => {
