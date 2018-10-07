@@ -32,7 +32,7 @@ const reponses = [
 ];
 
 const bot = new SlackBot({
-  token: "xoxb-450649886067-450936184773-Hw6DGTo67FXg6GRcHORD0HRA",
+  token: process.env.BOT_USER_OAUTH_ACCESS_TOKEN,
   name: "moises"
 });
 
